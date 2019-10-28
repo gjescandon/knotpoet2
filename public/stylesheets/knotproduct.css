@@ -20,6 +20,10 @@
   text-decoration: none;
 }
 
+.site-header img {
+  width: 33px;
+}
+
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */

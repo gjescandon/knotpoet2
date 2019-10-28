@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+const PORT = process.env.PORT || 5000
 var debug = require('debug')('knothearpoet:init');
 
 
@@ -53,7 +53,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
 

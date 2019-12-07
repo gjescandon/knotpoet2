@@ -9,6 +9,7 @@ var debug = require('debug')('knothearpoet:init');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var aboutRouter = require('./routes/about');
 
 var app = express();
 var POET = require('poet');
@@ -53,6 +54,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/about', aboutRouter);
+
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 

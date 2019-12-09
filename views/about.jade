@@ -3,41 +3,48 @@ extends layout
 block content
 
   div(class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3")
-    div(class="bg-light pt-3 px-3 pt-md-5 text-center text-white overflow-hidden")
-      div(class="my-3 py-3" style=)
+    div(class="bg-light pt-3 px-3 pt-md-5 text-center overflow-hidden")
+      div(class="my-3 py-3")
         img(src="/images/0selfie5_sm.png" style="width: 100%")
 
     div(class="bg-light pt-3 px-3 pt-md-5 text-center overflow-hidden")
       div(class="my-3 p-3")
-        h1(class="display-4 font-weight-normal")= title
-        p(class="lead font-weight-normal") Welcome to the <b>knothear</b> blog. This is the crafty sound central of producer musician Geoff Escandon. (That's me!) I am going to explore and share interesting music and whatnot with you. 
+        div
+          h1(class="display-4 font-weight-normal")= title
+        div
+          p(class="lead font-weight-normal") Welcome to the <b>knothear</b> blog. This is the crafty sound central of producer musician Geoff Escandon. (That's me!) I am going to explore and share interesting music and whatnot with you. 
+        div 
+          p(class="lead font-weight-normal") I invite you to follow me on Instgram: #[a(href="https://www.instagram.com/geoffknot/") @geoffknot]. 
+          a(class="btn btn-outline-secondary" href="https://www.instagram.com/geoffknot/") Go to Instagram
 
   div(class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3")
-    div(class="bg-light pt-3 px-3 pt-md-5 text-center text-white overflow-hidden")
-      div(class="my-3 py-3" style=)
-        Yeh, this is me. I started playing guitar and writing songs way way back in the late 80s. Along the way I have investigated many flavors of rock, jazz, pop, world beats and electronic music. Along the way I have also picked up electric bass and Ableton. For what it's worth, I have taken production and compostion classes with [Pointblank](https://www.pointblankmusicschool.com/courses/online/music-production-and-dj-courses/). I was pleased with the instructors and the course material.
+    div(class="bg-light pt-3 px-3 pt-md-5 text-center overflow-hidden")
+      div(class="my-3 py-3")
+        p(class="lead font-weight-normal") Yeh, this is me in 2019. I started playing guitar and writing songs way way back in the late 80s. Along the way I have studied and performned many flavors of rock, jazz, pop, blues, world beats and electronic music. I am an experienced improvisor and composer for small combos. Along the way I have also picked up electric bass and Ableton Live. 
+    div(class="bg-light pt-3 px-3 pt-md-5 text-center overflow-hidden")
+      div(class="my-3 p-3")
+        p(class="lead font-weight-normal") In 2019, I completed production and compostion classes with #[a(href="https://www.pointblankmusicschool.com/courses/online/music-production-and-dj-courses/") PointBlank Music]. I was very happy with the experience, the instructors and the course material. Highly Recommended.
+
+
+  div(class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3")
+    div(class="bg-light pt-3 px-3 pt-md-5 text-center overflow-hidden")
+      div(class="my-3 py-3")
+        h2(class="display-4 font-weight-normal") Production
+        p(class="lead font-weight-normal") Here is the short list of recordings that I have produced so far. You should see new entries here in 2020!
+        ul#production
+          li: a(href="https://soundcloud.com/gescandon/sets/rumba-del-mar") Rumba del Mar 2015 surf rock [soundcloud]
+          li: a(href="https://soundcloud.com/user-90602762/sets/live-at-the-blackbird") Rio Duende 2009 jazz rock [soundcloud]
+          li: a(href="https://soundcloud.com/user-536429853/sets/everything-orange") XP Morgan - Everything Orange 1999 Spoken Word [soundcloud]
 
     div(class="bg-light pt-3 px-3 pt-md-5 text-center overflow-hidden")
       div(class="my-3 p-3")
-        I invite you to follow me on Instgram: #[a(http="https://www.instagram.com/geoffknot/") @geoffknot].
-        a(class="btn btn-outline-secondary" href="https://www.instagram.com/geoffknot/") Go to Instagram
-
-    Please do contact me if you are interested in a remix, production support, or other collaborations!
-
-  div(class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3")
-    __Production__
-
-    1. Rumba del Mar [soundcloud](https://soundcloud.com/gescandon/sets/rumba-del-mar) 2015 surf rock 
-    1. Rio Duende - Live at the Blackbird [soundcloud](https://soundcloud.com/user-90602762/sets/live-at-the-blackbird) 2009 jazz rock 
-    1. Chris Patrick Morgan - Everything Orange [soundcloud](https://soundcloud.com/user-536429853/sets/everything-orange) 1999 Spoken Word
-
-    __Musician__
-
-    1. Kid Feliz Big City [soundcloud](https://soundcloud.com/kidfeliz/sets/kid-feliz/s-BLfML) 2018 electric guitar
-    1. Barelas Racket Club [soundcloud](https://soundcloud.com/gescandon/sets/barelas-racket-club ) 2015 electric guitar
-    1. The Goldsteins play Bowie [youtube](https://www.youtube.com/watch?v=BauFPCwpOko) 2016 David Bowie!
-    1. Shelley Barratt [spotify](https://open.spotify.com/playlist/4oIaR3xDBbY0qeiRQ81XQz?si=dPFEVY_TRwGDSgV7qpsz9g) Spotify 2015- electric guitar
-    1. Rio Duende [soundcloud](https://soundcloud.com/user-90602762/sets/live-at-the-blackbird) 2009 jazz rock guitar
-    1. Los Hermanos de Jazz [soundcloud](https://soundcloud.com/user-486761684/sets/extravaganza-side-a) 1991 - electric guitar
+        h2(class="display-4 font-weight-normal") Guitar Player
+        p(class="lead font-weight-normal") Here are some samples of my contributions as a musician. Hit me up if you need some!
+        ul#musician
+          li: a(href="https://soundcloud.com/kidfeliz/sets/kid-feliz/s-BLfML") Kid Feliz 2018 electric guitars [soundcloud]
+          li: a(href="https://www.youtube.com/watch?v=BauFPCwpOko") The Goldsteins play Bowie 2016 [youtube]
+          li: a(href="https://soundcloud.com/gescandon/sets/barelas-racket-club") Barelas Racket Club 2015 electric guitars [soundcloud]
+          li: a(href="https://open.spotify.com/playlist/4oIaR3xDBbY0qeiRQ81XQz?si=dPFEVY_TRwGDSgV7qpsz9g") Shelley Barratt 2015 electric guitars [spotify]
+          li: a(href="https://soundcloud.com/user-486761684/sets/extravaganza-side-a") Los Hermanos de Jazz 1991 electric guitar [soundcloud]
 
 

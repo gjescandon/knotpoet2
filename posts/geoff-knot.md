@@ -8,9 +8,9 @@
 
 ![Geoff Knot](../images/0selfie5_sm.png "Geoff Knot")
 
-Yeh, this is me. I started playing guitar and writing songs way way back in the late 80s. Along the way I have investigated many flavors of rock, jazz, pop, world beats and electronic music. Along the way I have also picked up electric bass and Ableton. 
+Yeh, this is me. I started playing guitar and writing songs way way back in the late 80s. Along the way I have investigated many flavors of rock, jazz, pop, world beats and electronic music. Along the way I have also picked up electric bass and Ableton. I am finally understanding synths, too.
 
-In this blog, I am sharing points of interest that have expanded my musical awareness. I will not be discussing basic concepts, as so many others are already doing a great job. As needed, I will include links that you can follow to build up yours basic skills.
+In this blog, I am sharing points of interest that have expanded my musical awareness. I will not be discussing basic concepts, as so many others are already doing a great job. As needed, I will include links that you can follow to build up yours skills.
 
 I invite you to follow me on [instragram](https://www.instagram.com/geoffknot/).
 

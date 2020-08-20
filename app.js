@@ -7,9 +7,11 @@ const PORT = process.env.PORT || 5000
 var debug = require('debug')('knothearpoet:init');
 
 
+var aboutRouter = require('./routes/about');
+var albumRouter = require('./routes/album');
+var antlersRouter = require('./routes/antlers');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var aboutRouter = require('./routes/about');
 
 var app = express();
 var POET = require('poet');
@@ -53,8 +55,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/about', aboutRouter);
+app.use('/album', albumRouter);
+app.use('/antlers', antlersRouter);
+app.use('/users', usersRouter);
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 

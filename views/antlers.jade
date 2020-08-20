@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title= title
+    
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+    script(src="/jquery-3.5.1.min.js")
+    script(src="/antlers.js")
+    
+    link(rel='stylesheet', href='/stylesheets/antlers.css')
+
+  body
+    div(id="titlebar")
+      h1 Antler Family Concentration
+    div(id="playpanel")
+      div(id="ppr1")
+        h2(id="statusCardA") Card A
+      div(id="ppr2")
+        h2(id="statusCardB") Card B
+      div(id="ppr3")
+        h2(id="statusMsg") Find the matching cards...
+    div(id="cardgrid")
+    div(id="controlsdiv")
+        div(class="controls" id="reset")
+          h2 Reset
+
+  script.
+    $( document ).ready(function() {
+    preloadImgs();
+    CardGrid.setupCards();
+    $(".card").click(function() {CardGrid.cardClick(this);});
+    $("#reset").click(function() {CardGrid.fullReset();});
+    });

@@ -1,5 +1,22 @@
 .container {
-  max-width: 960px;
+  max-width: 670px;
+}
+
+.post {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+  text-align: center;
+  width: 600px;
+  padding-top: 20px;
+  margin: auto;
+  
+}
+
+h1 a {
+  color: #000000;
 }
 
 /*

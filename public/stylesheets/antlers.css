@@ -1,0 +1,39 @@
+#titlebar {
+    background: #339999;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+#cardgrid {
+    padding: 10px;
+    text-align: center;
+}
+.card {
+    margin: 10px;
+}
+.card_row {
+    margin: 10px;
+}
+#playpanel {
+    padding: 1px 1px 5px 20px;
+    background: #eeeeee;
+    text-align: center;
+
+}
+#controlsdiv {
+    margin: 10px;
+}
+.controls {
+  text-decoration: underline;
+}
+
+.card_img {
+    width: 175px;
+    height: 175px;
+    border: 1px solid #ddd;
+}
+.content {
+  margin: 0 auto;
+}
+#ppr1 {display: none;}
+#ppr2 {display: none;}

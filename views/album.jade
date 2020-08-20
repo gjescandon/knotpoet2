@@ -21,19 +21,19 @@ html
           div(class="row")
             div(class="col-sm-8 col-md-7 py-4")
               h4(class="text-white") About
-              p(class="text-muted") Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.
+              p(class="text-muted") Welcome to the <b>knothear</b> blog. This is the crafty sound central of producer musician Geoff Escandon I am going to explore and share interesting music and whatnot with you. 
             div(class="col-sm-4 offset-md-1 py-4")
               h4(class="text-white") Contact
                 ul(class="list-unstyled")
                   li 
-                    a(href="#" class="text-white") Follow on Twitter
+                    a(href="https://www.instagram.com/geoffknot/" class="text-white") Follow on Instagram
                   li 
-                    a(href="#" class="text-white") Like on Facebook
+                    a(href="https://www.soundcloud.com/gescandon" class="text-white") Follow on Soundcloud
                   li 
-                    a(href="#" class="text-white") Email me
+                    a(href="https://www.youtube.com/channel/UC2r_ZA0aF8hHHXAxrNy6JDg" class="text-white") Follow on Youtube
       div(class="navbar navbar-dark bg-dark shadow-sm")
         div(class="container d-flex justify-content-between")
-          a(href="#" class="navbar-brand d-flex align-items-center") image hear Album
+          a(href="#" class="navbar-brand d-flex align-items-center") image knot hear
           button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation")
             span(class="navbar-toggler-icon")
 
@@ -43,24 +43,27 @@ html
         div(class="container")
           h1 Album example
           p(class="lead text-muted") Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.
-          a(href="#" class="btn btn-primary my-2") Main call to action
-          a(href="#" class="btn btn-secondary my-2") Secondary action
+          a(href="https://www.instagram.com/geoffknot/" class="btn btn-primary my-2") Check out my Instagram
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          a(href="/antlers" class="btn btn-secondary my-2") Improve your concentration
 
       div(class="album py-5 bg-light")
         div(class="container")
 
           div(class="row")
 
-            /* REPEAT 9x times */
-            div(class="col-md-4")
-              div(class="card mb-4 shadow-sm") imgimanadsfa here
-                div(class="card-body")
-                  p(class="card-text") This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                  div(class="d-flex justify-content-between align-items-center")
-                    div(class="btn-group")
-                      button(type="button" class="btn btn-sm btn-outline-secondary") View
-                      button(type="button" class="btn btn-sm btn-outline-secondary") Edit
-                    9 mins
+            each val in [1, 2, 3, 4, 5]
+              div(class="col-md-4")
+                div(class="card mb-4 shadow-sm")
+                  img(src="/images/beatoMug.jpg" height="250px")
+                  div(class="card-body")
+                    p(class="card-text") This mug is a puzzle, with a simple suprising solution!
+                    div(class="d-flex justify-content-between align-items-center")
+                      div(class="btn-group")
+                        a(href="/myposts/beato-mug")
+                          button(type="button" class="btn btn-sm btn-outline-secondary") View
+                        button(type="button" class="btn btn-sm btn-outline-secondary") Edit
+                      span 9 mins
 
 
     footer(class="text-muted")

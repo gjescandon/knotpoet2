@@ -3,7 +3,7 @@
   "tags": ["modes", "theory"],
   "category": "modes",
   "date": "10-29-2019",
-  "img": "/images/beatoMug.jpg",
+  "img": "/images/nawaatherfuzz.png",
   "preview":"I enjoy to create melody with non-diatonic scales."
 }}}
 

@@ -2,7 +2,10 @@
   "title": "Geoff Knot",
   "tags": ["about"],
   "category": "about",
-  "date": "11-22-2019"
+  "date": "11-22-2019",
+  "img": "/images/0selfie5_sm.png",
+  "preview": "Yeh, this is me."
+
 }}}
 
 

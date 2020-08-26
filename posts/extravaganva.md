@@ -4,7 +4,7 @@
   "category": "dub",
   "date": "11-06-2019",
   "img": "/images/jaskotDrumAnimal.png",
-  "preview": "We were in college, darn high, and blasting out post punk riffs."
+  "preview": "Extravaganza: We were in college, darn high, and blasting out post punk riffs."
 
 }}}
 

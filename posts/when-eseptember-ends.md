@@ -2,7 +2,9 @@
   "title": "When eSeptember Ends",
   "tags": ["remix", "recordings"],
   "category": "remix",
-  "date": "11-13-2019"
+  "date": "11-13-2019",
+  "preview": "eSeptember: I used the vocoder to reimagine the vocals.",
+  "img":"/images/esept.png"
 }}}
 
 Learning new songs in my advanced age, this is a Green Day remix.<!--more--> This songs hits me emotionally. I used the vocoder to reimagine the vocals.

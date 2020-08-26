@@ -31,7 +31,7 @@ var poet = POET(app, {
 
 poet.init().then(function(){
   //initialized
-  /* 
+  
   console.info(' console info poet init');
   console.log('post count: ' + poet.helpers.getPostCount());
   var posts = poet.helpers.getPosts(0, 3);
@@ -41,7 +41,11 @@ poet.init().then(function(){
   });
 
   console.log('page count: ' + poet.helpers.getPageCount()); 
-  */
+  
+  var modePosts = poet.helpers.postsWithTag('modes');
+  modePosts.forEach(tag => {
+    console.log(tag.title);
+  })
 });
 
 // view engine setup

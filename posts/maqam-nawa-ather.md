@@ -2,10 +2,12 @@
   "title": "Maqam Nawa Ather",
   "tags": ["modes", "theory"],
   "category": "modes",
-  "date": "10-29-2019"
+  "date": "10-29-2019",
+  "img": "/images/beatoMug.jpg",
+  "preview":"I enjoy to create melody with non-diatonic scales."
 }}}
 
-My friend Michael Hays showed this maqam to me. <!--more--> A maqam is similar to a mode. You can learn more about maqam at [Maqam World](https://www.maqamworld.com/en/maqam/nawa_athar.php).
+My friend Michael Hays showed this maqam to me. A maqam is similar to a mode. You can learn more about maqam at [Maqam World](https://www.maqamworld.com/en/maqam/nawa_athar.php).
 
 I am sure that I use this maqam incorrectly. However, it is so choice! I enjoy to create melody with non-diatonic scales. 
 

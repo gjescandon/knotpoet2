@@ -9,8 +9,7 @@
 
 .content {
   text-align: center;
-  width: 600px;
-  padding-top: 20px;
+  padding: 20px;
   margin: auto;
   
 }
@@ -19,6 +18,13 @@ h1 a {
   color: #000000;
 }
 
+.bg-knot {
+  background-color: rgba(233, 212, 71, .85);
+}
+
+.footer {
+  text-align: center;
+}
 /*
  * Custom translucent site header
  */

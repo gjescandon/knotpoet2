@@ -10,6 +10,7 @@ var modes = [];
 modes.push({"mode":"Double Harm Major","intervals":"1,b2,3,4,5,b6,7","semitones":"1,1,0,0,1,1,0,1,1,0,0,1","desc":"desc"});
 modes.push({"mode":"Ionian","intervals":"1,2,3,4,5,6,7","semitones":"1,0,1,0,1,1,0,1,0,1,0,1","desc":"desc"});
 modes.push({"mode":"Dorian","intervals":"1,2,b3,4,5,6,b7","semitones":"1,0,1,1,0,1,0,1,0,1,1,0","desc":"desc"});
+modes.push({"mode":"Lydian","intervals":"1,2,3,#4,5,6,7","semitones":"1,0,1,0,1,0,1,1,0,1,0,1","desc":"desc"});
 modes.push({"mode":"Ultraphrygian","intervals":"1,b2,b3,3,5,b6,6","semitones":"1,1,1,1,1,0,0,1,1,1,0,0","desc":"desc"});
 modes.push({"mode":"Hungarian Minor","intervals":"1,2,b3,b5,5,b6,7","semitones":"1,0,1,1,0,0,1,1,1,0,0,1","desc":"desc"});
 modes.push({"mode":"Oriental","intervals":"1,b2,3,4,b5,6,b7","semitones":"1,1,0,0,1,1,1,0,0,1,1,0","desc":"desc"});
@@ -17,7 +18,7 @@ modes.push({"mode":"Minor (Aeolian)","intervals":"1,2,b3,4,5,b6,b7","semitones":
 modes.push({"mode":"Harmonic Minor","intervals":"1,2,b3,4,5,b6,7","semitones":"1,0,1,1,0,1,0,1,1,0,0,1","desc":"desc"});
 modes.push({"mode":"Melodic Minor (up)","intervals":"1,2,b3,4,5,6,7","semitones":"1,0,1,1,0,1,0,1,0,1,0,1","desc":"desc"});
 modes.push({"mode":"Quartal","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,1,1,0,1,1,0,1,0,1,0","desc":"desc"});
-modes.push({"mode":"Phrygian Major","intervals":"1,b2,3,4,5,b6,b7","semitones":"1,1,0,0,1,1,0,1,1,0,1,0","desc":"desc"});
+modes.push({"mode":"Phrygian Dominant","intervals":"1,b2,3,4,5,b6,b7","semitones":"1,1,0,0,1,1,0,1,1,0,1,0","desc":"The Phrygian dominant scale is the fifth mode of the harmonic minor scale, the fifth being the dominant."});
 
 var degrees = [];
 degrees.push({"pos":0, "val":1});

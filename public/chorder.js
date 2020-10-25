@@ -114,8 +114,9 @@ var Chorder = {
       r += "<div class=\"col-sm\">Interval</div>";
       r += "<div class=\"col-sm\">Chord Name</div>";
       r += "<div class=\"col-med\">Formula</div>";
-      r += "<div class=\"col-sm\">Sus Chords</div>";
-      r += "<div class=\"col-sm\">Knot Chords</div>";
+
+      //r += "<div class=\"col-sm\">Sus Chords</div>";
+      //r += "<div class=\"col-sm\">Knot Chords</div>";
       r+= "</div>";
 
       var intervals = modeX.intervals.split(",");
@@ -172,8 +173,8 @@ var Chorder = {
         r += "<div class=\"col-sm\">" + intervals[i] + "</div>";
         r += "<div class=\"col-sm\">" + Chorder.getChordName(formulas[i]) + "</div>";
         r += "<div class=\"col-sm\">" + formulas[i] + "</div>";
-        r += "<div class=\"col-sm\"> sus cho </div>";
-        r += "<div class=\"col-sm\"> knot cho </div>";
+        //r += "<div class=\"col-sm\"> sus cho </div>";
+        //r += "<div class=\"col-sm\"> knot cho </div>";
         r+= "</div>";
       }
 

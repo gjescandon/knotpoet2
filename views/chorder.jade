@@ -1,0 +1,33 @@
+extends layout
+
+block head-scripts
+  link(rel='stylesheet', href='/stylesheets/chorder.css')
+  script(src="/chorder.js")
+    
+block content
+
+    section(class="jumbotron text-center")
+      div(class="container")
+        h1 Knot Chorder
+        p(class="lead text-muted") Find chords to rock your favorite mode.
+
+    div(class="album py-5 bg-light")
+      div(class="container")
+
+        div(class="row")
+          div#controls
+            select#mode-select.custom-select
+              optgroup
+                option Select your Mode
+        div(class="row")
+          div#chord-grid
+
+block js-footer    
+
+  script.
+    $( document ).ready(function() {
+      Chorder.setup();
+      $(".modes").click(function() {Chorder.modeSelect(this);});
+      $("#reset").click(function() {CardGrid.fullReset();});
+      $('#mode-select').on('change', function() {Chorder.getChords(this);});
+    });

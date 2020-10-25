@@ -10,6 +10,7 @@ var debug = require('debug')('knothearpoet:init');
 var aboutRouter = require('./routes/about');
 var albumRouter = require('./routes/album');
 var antlersRouter = require('./routes/antlers');
+var chorderRouter = require('./routes/chorder');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -63,6 +64,7 @@ app.use('/', albumRouter);
 app.use('/about', aboutRouter);
 app.use('/album', albumRouter);
 app.use('/antlers', antlersRouter);
+app.use('/chorder', chorderRouter);
 app.use('/users', usersRouter);
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

@@ -1,0 +1,15 @@
+#chord-grid {
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.big-selector {
+  font-size: large;
+}
+
+#ppr1 {display: none;}
+#ppr2 {display: none;}

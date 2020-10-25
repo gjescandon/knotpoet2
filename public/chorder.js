@@ -8,12 +8,12 @@ function sleep(ms) {
 
 var modes = [];
 
-modes.push({"mode":"Altered","group":"Jazz","intervals":"1,b2,b3,3,b5,b6,b7","semitones":"1,1,0,1,1,0,1,0,1,0,1,0","desc":"How to sound 'jazzy'. Lots of fun over the 7th chords."});
-modes.push({"mode":"Diminished","group":"Advanced, Metal","intervals":"1,2,b3,4,b5,b6,6,7","semitones":"1,0,1,1,0,1,1,0,1,1,0,1","desc":"A symmetrical scale that is built by alternating whole steps and half steps. Stack two diminished chords."});
+modes.push({"mode":"Altered","group":"Jazz","intervals":"1,b2,b3,3,b5,b6,b7","semitones":"1,1,0,1,1,0,1,0,1,0,1,0","desc":"How to sound 'jazzy'. Lots of fun over the dominant 7th chords and minor 7th chords too."});
+modes.push({"mode":"Diminished","group":"Advanced, Metal","intervals":"1,2,b3,4,b5,b6,6,7","semitones":"1,0,1,1,0,1,1,0,1,1,0,1","desc":"A symmetrical scale that is built by alternating whole steps and half steps. Alternately, it is stacked two diminished chords."});
 modes.push({"mode":"Dorian","group":"Basic","intervals":"1,2,b3,4,5,6,b7","semitones":"1,0,1,1,0,1,0,1,0,1,1,0","desc":"2nd mode of the Major Scale"});
-modes.push({"mode":"Double Diminished","group":"Jazz","intervals":"1,b2,b3,3,b5,5,6,b7","semitones":"1,1,0,1,1,0,1,1,0,1,1,0","desc":"Same as the diminished scale, starting on the 2nd degree. Alternatively, Stack two diminished chords."});
+modes.push({"mode":"Double Diminished","group":"Jazz","intervals":"1,b2,b3,3,b5,5,6,b7","semitones":"1,1,0,1,1,0,1,1,0,1,1,0","desc":"Same as the diminished scale, starting on the 2nd degree. Alternatively, Stack two diminished chords. Very similar to Altered scale. Jazzy."});
 modes.push({"mode":"Double Harm Major","group":"Advanced","intervals":"1,b2,3,4,5,b6,7","semitones":"1,1,0,0,1,1,0,1,1,0,0,1","desc":"Double Harmonic Major. Very Interesting scale. Radially symmetric around the root. See: The Beato Mug."});
-modes.push({"mode":"Harmonic Minor","group":"Advanced","intervals":"1,2,b3,4,5,b6,7","semitones":"1,0,1,1,0,1,0,1,1,0,0,1","desc":"I've never understood the ascending/desceding concept."});
+modes.push({"mode":"Harmonic Minor","group":"Advanced","intervals":"1,2,b3,4,5,b6,7","semitones":"1,0,1,1,0,1,0,1,1,0,0,1","desc":"Not sure where this comes from, but it's fun to combine the minor 3rd and a major 7."});
 modes.push({"mode":"Hungarian Minor","group":"Advanced, Metal","intervals":"1,2,b3,b5,5,b6,7","semitones":"1,0,1,1,0,0,1,1,1,0,0,1","desc":"4th mode of Dbl Harmonic Major"});
 modes.push({"mode":"Locrian","group":"Basic","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,0,1,0,1,1,0,1,0,1,0","desc":"7th mode of the Major Scale"});
 modes.push({"mode":"Lydian","group":"Basic, Metal","intervals":"1,2,3,#4,5,6,7","semitones":"1,0,1,0,1,0,1,1,0,1,0,1","desc":"4th mode (subdominant) of the Major Scale"});
@@ -147,10 +147,10 @@ var Chorder = {
         }
       });  
           
-      r = "<div class=\"col-12\"><h2>"+modeX.mode+"</h2></div>";
+      r = "<div class=\"row, border-top, border-bottom\"><div class=\"col-12\"><h2>"+modeX.mode+"</h2></div></div>";
       
-      //r += "<div class=\"col-12\"><table class=\"table,table-bordered,table-striped, chorder-center\">";
-      r += "<table class=\"table,table-bordered,table-striped, chorder-center\">";
+      r += "<div class=\"row,border-bottom\"><div class=\"col-12\"><table class=\"table,table-bordered,table-striped, chorder-table\">";
+      //r += "<table class=\"table,table-bordered,table-striped, chorder-center\">";
       r += "<thead class=\"thead-dark\"><tr>";
       r += "<th scope=\"col\">Degree</div>";
       r += "<th scope=\"col\">Interval</td>";
@@ -225,7 +225,8 @@ var Chorder = {
         //r += "<div class=\"col-sm\"> knot cho </div>";
         r+= "</tr>";
       }
-      r += "</tbody></table></div>";
+      r += "</tbody></table></div></div>";
+      r += "<div class=\"row, chorder-margin\"><div class=\"col-12\">"+modeX.desc+"</div></div>";
 
       $("#chord-grid").html(r);
       }

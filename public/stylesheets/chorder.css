@@ -11,10 +11,19 @@
   font-size: large;
 }
 
-.chorder-center {
+.chorder-margin {
+  margin: 20px;
+  border-top: 1px;
+  font-style: italic;
+}
+.chorder-table {
   margin-left: auto;
   margin-right: auto;
   text-align: center; 
+}
+
+.chorder-table th{
+  padding: 13px;
 }
 #ppr1 {display: none;}
 #ppr2 {display: none;}

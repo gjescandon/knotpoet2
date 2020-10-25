@@ -23,22 +23,34 @@ modes.push({"mode":"Minor (Aeolian)","group":"Advanced","intervals":"1,2,b3,4,5,
 modes.push({"mode":"Mixolydian","group":"Basic","intervals":"1,2,3,4,5,6,b7","semitones":"1,0,1,0,1,1,0,1,0,1,1,0","desc":"5th mode (dominant) of the Major Scale"});
 modes.push({"mode":"Phrygian Dominant","group":"Metal","intervals":"1,b2,3,4,5,b6,b7","semitones":"1,1,0,0,1,1,0,1,1,0,1,0","desc":"5th mode of Harmonic Minor."});
 modes.push({"mode":"Phrygian","group":"Basic","intervals":"1,b2,b3,4,5,b6,b7","semitones":"1,1,0,1,0,1,0,1,1,0,1,0","desc":"3rd mode of the Major Scale"});
-modes.push({"mode":"Quartal","group":"DIY","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,1,1,0,1,1,0,1,0,1,0","desc":"I made this up by stacking 7 intervals of 4ths. Turns out it is same as Locrian."});
+//modes.push({"mode":"Quartal","group":"DIY","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,1,1,0,1,1,0,1,0,1,0","desc":"I made this up by stacking 7 intervals of 4ths. Turns out it is same as Locrian."});
 //modes.push({"mode":"Whole Tone","group":"Jazz","intervals":"1,2,3,#4,#5,b7","semitones":"1,0,1,0,1,0,1,0,1,0,1,0","desc":"Whole tones. Lots of fun over altered chords."});
 
-var degrees = [];
-degrees.push({"pos":0, "val":1});
-degrees.push({"pos":1, "val":"b9"});
-degrees.push({"pos":2, "val":"9"});
-degrees.push({"pos":3, "val":"#9"});
-degrees.push({"pos":4, "val":"3"});
-degrees.push({"pos":5, "val":"4"});
-degrees.push({"pos":6, "val":"b5"});
-degrees.push({"pos":7, "val":"5"});
-degrees.push({"pos":8, "val":"#5"});
-degrees.push({"pos":9, "val":"13"});
-degrees.push({"pos":10, "val":"b7"});
-degrees.push({"pos":11, "val":"7"});
+var degrees = {};
+degrees["1"]={"pos":0, "val":"1", "note":"C"};
+degrees["b2"]={"pos":1, "val":"b2", "note":"Db"};
+degrees["2"]={"pos":2, "val":"#9", "note":"D"};
+degrees["#9"]={"pos":3, "val":"", "note":"Eb"};
+degrees["b3"]={"pos":3, "val":"b3", "note":"Eb"};
+degrees["3"]={"pos":4, "val":"3", "note":"E"};
+degrees["4"]={"pos":5, "val":"4", "note":"F"};
+degrees["#4"]={"pos":6, "val":"#4", "note":"Gb"};
+degrees["b5"]={"pos":6, "val":"b5", "note":"Gb"};
+degrees["5"]={"pos":7, "val":"5", "note":"G"};
+degrees["#5"]={"pos":8, "val":"#5", "note":"Ab"};
+degrees["b6"]={"pos":8, "val":"b6", "note":"Ab"};
+degrees["6"]={"pos":9, "val":"6", "note":"A"};
+degrees["b7"]={"pos":10, "val":"b7", "note":"Bb"};
+degrees["7"]={"pos":11, "val":"7", "note":"B"};
+
+
+
+
+
+
+
+
+
 
 var chords = {};
 chords["1m35M7"]="min M7";
@@ -62,6 +74,20 @@ chords["1m33b5"]="dim";
 chords["1347"]="sus";
 chords["147"]="sus";
 chords["1m347"]="msus";
+
+var cn = [];
+cn.push["C"];
+cn.push["Db"];
+cn.push["D"];
+cn.push["Eb"];
+cn.push["E"];
+cn.push["F"];
+cn.push["Gb"];
+cn.push["G"];
+cn.push["Ab"];
+cn.push["A"];
+cn.push["Bb"];
+cn.push["B"];
 
 var Chorder = {
     width:3,
@@ -97,11 +123,12 @@ var Chorder = {
 
 
     },
-    getChordName: function(frm) {
+    getChordName: function(int, frm) {
+      log(int);
       if(chords[frm]== undefined) {
         return 'n/a';
       } else {
-        return chords[frm];
+        return degrees[int].note + " " + chords[frm];
       }
     },
     getChords : function(mode) {
@@ -121,18 +148,19 @@ var Chorder = {
       });  
           
       r = "<div class=\"col-12\"><h2>"+modeX.mode+"</h2></div>";
-      //r = "<h2>"+modeX.mode+"</h2>";
-      r += "<div class=\"col-12\"><table class=\"chorder-center\">";
-      r += "<tr>";
-      r += "<th class=\"col-3\">Degree</div>";
-      r += "<th class=\"col-3\">Interval</td>";
-      r += "<th class=\"col-3\">Chord Name</td>";
-      r += "<th class=\"col-3\">Formula</td>";
+      
+      //r += "<div class=\"col-12\"><table class=\"table,table-bordered,table-striped, chorder-center\">";
+      r += "<table class=\"table,table-bordered,table-striped, chorder-center\">";
+      r += "<thead class=\"thead-dark\"><tr>";
+      r += "<th scope=\"col\">Degree</div>";
+      r += "<th scope=\"col\">Interval</td>";
+      r += "<th scope=\"col\">Chord Name</td>";
+      r += "<th scope=\"col\">Formula</td>";
 
       //r += "<div class=\"col-sm\">Sus Chords</div>";
       //r += "<div class=\"col-sm\">Knot Chords</div>";
-      r+= "</tr>";
-
+      r+= "</tr></thead>";
+      r+= "<tbody>";
       var intervals = modeX.intervals.split(",");
       var stones = modeX.semitones.split(",");
       var cnt = 1;
@@ -145,6 +173,7 @@ var Chorder = {
           stones.push(ff);
         }
         // identify intervals
+        var cn = [];
         if (stones[0]==1) {
           var fd = [];
           fd.push("1");
@@ -190,13 +219,13 @@ var Chorder = {
           r += "<td>" + j + "</td>";
         }
         r += "<td>" + intervals[i] + "</td>";
-        r += "<td>" + Chorder.getChordName(formulas[i]) + "</td>";
+        r += "<td>" + Chorder.getChordName(intervals[i], formulas[i]) + "</td>";
         r += "<td>" + formulas[i] + "</td>";
         //r += "<div class=\"col-sm\"> sus cho </div>";
         //r += "<div class=\"col-sm\"> knot cho </div>";
         r+= "</tr>";
       }
-      r += "</table></div>";
+      r += "</tbody></table></div>";
 
       $("#chord-grid").html(r);
       }

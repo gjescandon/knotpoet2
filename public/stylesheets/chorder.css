@@ -11,5 +11,10 @@
   font-size: large;
 }
 
+.chorder-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+}
 #ppr1 {display: none;}
 #ppr2 {display: none;}

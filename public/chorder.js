@@ -24,7 +24,7 @@ modes.push({"mode":"Mixolydian","group":"Basic","intervals":"1,2,3,4,5,6,b7","se
 modes.push({"mode":"Phrygian Dominant","group":"Metal","intervals":"1,b2,3,4,5,b6,b7","semitones":"1,1,0,0,1,1,0,1,1,0,1,0","desc":"5th mode of Harmonic Minor."});
 modes.push({"mode":"Phrygian","group":"Basic","intervals":"1,b2,b3,4,5,b6,b7","semitones":"1,1,0,1,0,1,0,1,1,0,1,0","desc":"3rd mode of the Major Scale"});
 modes.push({"mode":"Quartal","group":"DIY","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,1,1,0,1,1,0,1,0,1,0","desc":"I made this up by stacking 7 intervals of 4ths. Turns out it is same as Locrian."});
-modes.push({"mode":"Whole Tone","group":"Jazz","intervals":"1,2,3,#4,#5,b7","semitones":"1,0,1,0,1,0,1,0,1,0,1,0","desc":"Whole tones. Lots of fun over altered chords."});
+//modes.push({"mode":"Whole Tone","group":"Jazz","intervals":"1,2,3,#4,#5,b7","semitones":"1,0,1,0,1,0,1,0,1,0,1,0","desc":"Whole tones. Lots of fun over altered chords."});
 
 var degrees = [];
 degrees.push({"pos":0, "val":1});
@@ -120,13 +120,14 @@ var Chorder = {
         }
       });  
           
-      r = "<div><h2>"+modeX.mode+"</h2></div>";
-      r += "<div><table>";
+      r = "<div class=\"col-12\"><h2>"+modeX.mode+"</h2></div>";
+      //r = "<h2>"+modeX.mode+"</h2>";
+      r += "<div class=\"col-12\"><table class=\"chorder-center\">";
       r += "<tr>";
-      r += "<td>Degree</div>";
-      r += "<td class=\"col\">Interval</td>";
-      r += "<td class=\"col\">Chord Name</td>";
-      r += "<td class=\"col\">Formula</td>";
+      r += "<th class=\"col-3\">Degree</div>";
+      r += "<th class=\"col-3\">Interval</td>";
+      r += "<th class=\"col-3\">Chord Name</td>";
+      r += "<th class=\"col-3\">Formula</td>";
 
       //r += "<div class=\"col-sm\">Sus Chords</div>";
       //r += "<div class=\"col-sm\">Knot Chords</div>";

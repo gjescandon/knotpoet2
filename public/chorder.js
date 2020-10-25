@@ -7,18 +7,25 @@ function sleep(ms) {
 
 
 var modes = [];
-modes.push({"mode":"Double Harm Major","intervals":"1,b2,3,4,5,b6,7","semitones":"1,1,0,0,1,1,0,1,1,0,0,1","desc":"desc"});
-modes.push({"mode":"Ionian","intervals":"1,2,3,4,5,6,7","semitones":"1,0,1,0,1,1,0,1,0,1,0,1","desc":"desc"});
-modes.push({"mode":"Dorian","intervals":"1,2,b3,4,5,6,b7","semitones":"1,0,1,1,0,1,0,1,0,1,1,0","desc":"desc"});
-modes.push({"mode":"Lydian","intervals":"1,2,3,#4,5,6,7","semitones":"1,0,1,0,1,0,1,1,0,1,0,1","desc":"desc"});
-modes.push({"mode":"Ultraphrygian","intervals":"1,b2,b3,3,5,b6,6","semitones":"1,1,1,1,1,0,0,1,1,1,0,0","desc":"desc"});
-modes.push({"mode":"Hungarian Minor","intervals":"1,2,b3,b5,5,b6,7","semitones":"1,0,1,1,0,0,1,1,1,0,0,1","desc":"desc"});
-modes.push({"mode":"Oriental","intervals":"1,b2,3,4,b5,6,b7","semitones":"1,1,0,0,1,1,1,0,0,1,1,0","desc":"desc"});
-modes.push({"mode":"Minor (Aeolian)","intervals":"1,2,b3,4,5,b6,b7","semitones":"1,0,1,1,0,1,0,1,1,0,1,0","desc":"desc"});
-modes.push({"mode":"Harmonic Minor","intervals":"1,2,b3,4,5,b6,7","semitones":"1,0,1,1,0,1,0,1,1,0,0,1","desc":"desc"});
-modes.push({"mode":"Melodic Minor (up)","intervals":"1,2,b3,4,5,6,7","semitones":"1,0,1,1,0,1,0,1,0,1,0,1","desc":"desc"});
-modes.push({"mode":"Quartal","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,1,1,0,1,1,0,1,0,1,0","desc":"desc"});
-modes.push({"mode":"Phrygian Dominant","intervals":"1,b2,3,4,5,b6,b7","semitones":"1,1,0,0,1,1,0,1,1,0,1,0","desc":"The Phrygian dominant scale is the fifth mode of the harmonic minor scale, the fifth being the dominant."});
+
+modes.push({"mode":"Double Harm Major","group":"Advanced","intervals":"1,b2,3,4,5,b6,7","semitones":"1,1,0,0,1,1,0,1,1,0,0,1","desc":"Double Harmonic Major. Very Interesting scale. Radially symmetric around the root. See: The Beato Mug."});
+modes.push({"mode":"Ionian","group":"Basic","intervals":"1,2,3,4,5,6,7","semitones":"1,0,1,0,1,1,0,1,0,1,0,1","desc":"Major Scale"});
+modes.push({"mode":"Dorian","group":"Basic","intervals":"1,2,b3,4,5,6,b7","semitones":"1,0,1,1,0,1,0,1,0,1,1,0","desc":"2nd mode of the Major Scale"});
+modes.push({"mode":"Hungarian Minor","group":"Advanced, Metal","intervals":"1,2,b3,b5,5,b6,7","semitones":"1,0,1,1,0,0,1,1,1,0,0,1","desc":"4th mode of Dbl Harmonic Major"});
+modes.push({"mode":"Minor (Aeolian)","group":"Advanced","intervals":"1,2,b3,4,5,b6,b7","semitones":"1,0,1,1,0,1,0,1,1,0,1,0","desc":"6th mode of the Major Scale. "});
+modes.push({"mode":"Harmonic Minor","group":"Advanced","intervals":"1,2,b3,4,5,b6,7","semitones":"1,0,1,1,0,1,0,1,1,0,0,1","desc":"I've never understood the ascending/desceding concept."});
+modes.push({"mode":"Melodic Minor (up)","group":"Advanced","intervals":"1,2,b3,4,5,6,7","semitones":"1,0,1,1,0,1,0,1,0,1,0,1","desc":"I've never understood the ascending/desceding concept."});
+modes.push({"mode":"Quartal","group":"DIY","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,1,1,0,1,1,0,1,0,1,0","desc":"I made this up by stacking 7 intervals of 4ths. Turns out it is same as Locrian."});
+modes.push({"mode":"Phrygian Dominant","group":"Metal","intervals":"1,b2,3,4,5,b6,b7","semitones":"1,1,0,0,1,1,0,1,1,0,1,0","desc":"5th mode of Harmonic Minor."});
+modes.push({"mode":"Lydian","group":"Basic, Metal","intervals":"1,2,3,#4,5,6,7","semitones":"1,0,1,0,1,0,1,1,0,1,0,1","desc":"4th mode (subdominant) of the Major Scale"});
+modes.push({"mode":"Mixolydian","group":"Basic","intervals":"1,2,3,4,5,6,b7","semitones":"1,0,1,0,1,1,0,1,0,1,1,0","desc":"5th mode (dominant) of the Major Scale"});
+modes.push({"mode":"Phrygian","group":"Basic","intervals":"1,b2,b3,4,5,b6,b7","semitones":"1,1,0,1,0,1,0,1,1,0,1,0","desc":"3rd mode of the Major Scale"});
+modes.push({"mode":"Locrian","group":"Basic","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,0,1,0,1,1,0,1,0,1,0","desc":"7th mode of the Major Scale"});
+modes.push({"mode":"Whole Tone","group":"Jazz","intervals":"1,2,3,#4,#5,b7","semitones":"1,0,1,0,1,0,1,0,1,0,1,0","desc":"Whole tones. Lots of fun over altered chords."});
+modes.push({"mode":"Diminished","group":"Advanced, Metal","intervals":"1,2,b3,4,b5,b6,6,7","semitones":"1,0,1,1,0,1,1,0,1,1,0,1","desc":"A symmetrical scale that is built by alternating whole steps and half steps. Stack two diminished chords."});
+modes.push({"mode":"Double Diminished","group":"Jazz","intervals":"1,b2,b3,3,b5,5,6,b7","semitones":"1,1,0,1,1,0,1,1,0,1,1,0","desc":"Same as the diminished scale, starting on the 2nd degree. Alternatively, Stack two diminished chords."});
+modes.push({"mode":"Altered","group":"Jazz","intervals":"1,b2,b3,3,b5,b6,b7","semitones":"1,1,0,1,1,0,1,0,1,0,1,0","desc":"How to sound 'jazzy'. Lots of fun over the 7th chords."});
+
 
 var degrees = [];
 degrees.push({"pos":0, "val":1});
@@ -78,10 +85,15 @@ var Chorder = {
         // load mode options
         log('chorder setup');
         var sel = document.getElementById("mode-select");
+        var grps = {};
         modes.forEach(function(el) {
           var option = document.createElement("option");
           option.text = el.mode;
           sel.add(option);
+          var g = el.group.split(",");
+          g.forEach(function(x){
+            grps[x]='mode group';
+          })
         });
 
 
@@ -100,7 +112,8 @@ var Chorder = {
           mx = $( this ).text();
         });
 
-        var modeX;
+      var modeX;
+      var groups = {};
       modes.forEach(function(el) {
         if (el.mode == mx) {
           modeX = el;

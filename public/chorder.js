@@ -108,16 +108,17 @@ var Chorder = {
         }
       });  
           
-      r = "<div class=\"row\"><h2>"+modeX.mode+"</h2></div>";
-      r += "<div class=\"row\">";
-      r += "<div class=\"col-sm\">Degree</div>";
-      r += "<div class=\"col-sm\">Interval</div>";
-      r += "<div class=\"col-sm\">Chord Name</div>";
-      r += "<div class=\"col-med\">Formula</div>";
+      r = "<div><h2>"+modeX.mode+"</h2></div>";
+      r += "<div><table>";
+      r += "<tr>";
+      r += "<td>Degree</div>";
+      r += "<td class=\"col\">Interval</td>";
+      r += "<td class=\"col\">Chord Name</td>";
+      r += "<td class=\"col\">Formula</td>";
 
       //r += "<div class=\"col-sm\">Sus Chords</div>";
       //r += "<div class=\"col-sm\">Knot Chords</div>";
-      r+= "</div>";
+      r+= "</tr>";
 
       var intervals = modeX.intervals.split(",");
       var stones = modeX.semitones.split(",");
@@ -168,15 +169,16 @@ var Chorder = {
 
 
       for (i=0; i<7; i++) {
-        r += "<div class=\"row\">";
-        r += "<div class=\"col-sm\">" + i + "</div>";
-        r += "<div class=\"col-sm\">" + intervals[i] + "</div>";
-        r += "<div class=\"col-sm\">" + Chorder.getChordName(formulas[i]) + "</div>";
-        r += "<div class=\"col-sm\">" + formulas[i] + "</div>";
+        r += "<tr>";
+        r += "<td>" + i + "</td>";
+        r += "<td>" + intervals[i] + "</td>";
+        r += "<td>" + Chorder.getChordName(formulas[i]) + "</td>";
+        r += "<td>" + formulas[i] + "</td>";
         //r += "<div class=\"col-sm\"> sus cho </div>";
         //r += "<div class=\"col-sm\"> knot cho </div>";
-        r+= "</div>";
+        r+= "</tr>";
       }
+      r += "</table></div>";
 
       $("#chord-grid").html(r);
       }

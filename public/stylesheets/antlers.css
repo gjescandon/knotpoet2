@@ -28,8 +28,8 @@
 }
 
 .card_img {
-    width: 175px;
-    height: 175px;
+    width: 20%;
+    height: 20%;
     border: 1px solid #ddd;
 }
 .content {

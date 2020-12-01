@@ -7,21 +7,45 @@ block content
       div(class="container")
         h1 Sounds twisted
         p(class="lead text-muted") That's how you like it. And you will like it.
-        a(href="https://www.instagram.com/geoffknot/" class="btn btn-primary my-2") Check out my Instagram
+        a(href="https://www.instagram.com/geoffknot/" class="btn btn-primary my-2") Check out my Instagram.
         p You look a bit dazed. Trouble with your focus?
         a(href="/antlers" class="btn btn-secondary my-2") Improve your concentration
 
     div(class="album py-5 bg-light")
       div(class="container")
+        div(class="row")
+          //
+            each post in getPosts()
+              div(class="col-md-4")
+                div(class="card mb-4 shadow-sm")
+                  img(src=post.img height="250px")
+                  div(class="card-body")
+                    p(class="card-text") 
+                      != post.preview
 
         div(class="row")
 
-          each post in getPosts()
+          - var postKIG = getPost("knot-instagram")
             div(class="col-md-4")
               div(class="card mb-4 shadow-sm")
-                img(src=post.img height="250px")
+                img(src=postKIG.img height="250px")
                 div(class="card-body")
                   p(class="card-text") 
-                    != post.preview
+                    != postKIG.preview
 
 
+          - var postTools = getPost("music-tools")
+            div(class="col-md-4")
+              div(class="card mb-4 shadow-sm")
+                img(src=postTools.img height="250px")
+                div(class="card-body")
+                  p(class="card-text") 
+                    != postTools.preview
+
+          - var postKnot = getPost("geoff-knot")
+            div(class="col-md-4")
+              div(class="card mb-4 shadow-sm")
+                img(src=postKnot.img height="250px")
+                div(class="card-body")
+                  p(class="card-text") 
+                    != postKnot.preview                    

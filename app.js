@@ -47,7 +47,11 @@ poet.init().then(function(){
   modePosts.forEach(tag => {
     console.log(tag.title);
   })
-  */
+  
+
+  var tPost = poet.helpers.getPost("knot-instagram");
+  console.log("hello here" + tPost.title);
+*/
 });
 
 // view engine setup

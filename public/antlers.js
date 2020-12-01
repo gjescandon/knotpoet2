@@ -81,9 +81,9 @@ var CardGrid = {
         // build dom string
         var ds = '';
         var ci = 0;
-        for (x = 0; x < CardGrid.width; x++) {
+        for (x = 0; x < CardGrid.height; x++) {
             ds += '<div class="card_row">';
-            for (y = 0; y < CardGrid.height; y++) {
+            for (y = 0; y < CardGrid.width; y++) {
                 ds += '<span class="card" id="' + carr[ci] + '"><img class="card_img" id="img_' + carr[ci] + '" src="' + backcard + '"></span>';
                 ci++;
             }

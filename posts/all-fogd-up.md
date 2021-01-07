@@ -3,13 +3,13 @@
   "tags": ["music"],
   "category": "music",
   "date": "01-06-21",
-  "img": "/images/allfogdup.png",
+  "img": "/images/allFogdUp.png",
   "preview": "Electronic music streaming everywhere!"
 
 }}}
 
 
-![all fogd up](../images/allfogdup.png "all fogd up")
+![all fogd up](../images/allFogdUp.png "all fogd up")
 
 My first release! All Fogd Up is a 6 pack of electronic fancy. 
 

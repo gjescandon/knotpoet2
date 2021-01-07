@@ -5,11 +5,13 @@ block content
 
     section(class="jumbotron text-center")
       div(class="container")
-        h1 Sounds twisted
-        p(class="lead text-muted") That's how you like it. And you will like it.
+        h1 New Music! All Fogd Up
+
+        a(href="/myposts/all-fogd-up" class="btn btn-primary my-2") Listen on your favorite streaming service.
+
+        p(class="lead text-muted") Sounds twisted. That's how you like it.
         a(href="https://www.instagram.com/geoffknot/" class="btn btn-primary my-2") Check out my Instagram.
-        p You look a bit dazed. Trouble with your focus?
-        a(href="/antlers" class="btn btn-secondary my-2") Improve your concentration
+
 
     div(class="album py-5 bg-light")
       div(class="container")
@@ -25,7 +27,7 @@ block content
 
         div(class="row")
 
-          - var postKIG = getPost("knot-instagram")
+          - var postKIG = getPost("all-fogd-up")
             div(class="col-md-4")
               div(class="card mb-4 shadow-sm")
                 img(src=postKIG.img height="250px")

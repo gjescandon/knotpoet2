@@ -1,0 +1,39 @@
+extends layout
+
+block head-scripts
+  link(rel='stylesheet', href='/stylesheets/chorder.css')
+  script(src="/chorder.js")
+    
+block content
+
+    section(class="jumbotron text-center")
+      div(class="container")
+        h1 Knotty Links
+        
+        a(href="/myposts/all-fogd-up" class="btn btn-primary my-2") Listen to Geof Knot your favorite streaming service.
+        
+        p
+
+        a(href="https://www.youtube.com" class="btn btn-secondary my-2") Subscribe to the Livestream
+
+        p 
+        
+        a(href="/myposts/music-tools" class="btn btn-primary my-2") Free Music Tools
+
+        p
+        
+        a(href="https://www.instagram.com/myposts/" class="btn btn-secondary my-2") Check out my Instagram
+
+        p
+        
+        a(href="/myposts" class="btn btn-primary my-2") All the blog Things
+
+block js-footer    
+
+  script.
+    $( document ).ready(function() {
+      Chorder.setup();
+      $(".modes").click(function() {Chorder.modeSelect(this);});
+      $("#reset").click(function() {CardGrid.fullReset();});
+      $('#mode-select').on('change', function() {Chorder.getChords(this);});
+    });

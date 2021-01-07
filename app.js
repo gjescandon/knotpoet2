@@ -12,6 +12,7 @@ var albumRouter = require('./routes/album');
 var antlersRouter = require('./routes/antlers');
 var chorderRouter = require('./routes/chorder');
 var indexRouter = require('./routes/index');
+var linksRouter = require('./routes/linktree');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -69,6 +70,7 @@ app.use('/about', aboutRouter);
 app.use('/album', albumRouter);
 app.use('/antlers', antlersRouter);
 app.use('/chorder', chorderRouter);
+app.use('/linktree', linksRouter);
 app.use('/users', usersRouter);
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

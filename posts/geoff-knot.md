@@ -25,15 +25,22 @@ Please do contact me if you are interested in a remix, production support, or ot
 
 __Production__
 
-1. Rumba del Mar [soundcloud](https://soundcloud.com/gescandon/sets/rumba-del-mar) 2015 surf rock 
-1. Rio Duende - Live at the Blackbird [soundcloud](https://soundcloud.com/user-90602762/sets/live-at-the-blackbird) 2009 jazz rock 
-1. Chris Patrick Morgan - Everything Orange [soundcloud](https://soundcloud.com/user-536429853/sets/everything-orange) 1999 Spoken Word
+[![Rumba del Mar](/images/kageRumbaSmallSmall.png)](https://soundcloud.com/gescandon/sets/rumba-del-mar)
+
+**Rumba del Mar** [soundcloud](https://soundcloud.com/gescandon/sets/rumba-del-mar) 2015 surf rock
+
+**Rio Duende** Live at the Blackbird [soundcloud](https://soundcloud.com/user-90602762/sets/live-at-the-blackbird) 2009 jazz rock 
+
+**Chris Patrick Morgan** Everything Orange [soundcloud](https://soundcloud.com/user-536429853/sets/everything-orange) 1999 Spoken Word
 
 __Musician__
 
-1. Kid Feliz Big City [soundcloud](https://soundcloud.com/kidfeliz/sets/kid-feliz/s-BLfML) 2018 electric guitar
-1. Barelas Racket Club [soundcloud](https://soundcloud.com/gescandon/sets/barelas-racket-club ) 2015 electric guitar
-1. The Goldsteins play Bowie [youtube](https://www.youtube.com/watch?v=BauFPCwpOko) 2016 David Bowie!
-1. Shelley Barratt [spotify](https://open.spotify.com/playlist/4oIaR3xDBbY0qeiRQ81XQz?si=dPFEVY_TRwGDSgV7qpsz9g) Spotify 2015- electric guitar
-1. Rio Duende [soundcloud](https://soundcloud.com/user-90602762/sets/live-at-the-blackbird) 2009 jazz rock guitar
-1. Los Hermanos de Jazz [soundcloud](https://soundcloud.com/user-486761684/sets/extravaganza-side-a) 1991 - electric guitar
+**Kid Feliz** Big City [soundcloud](https://soundcloud.com/kidfeliz/sets/kid-feliz/s-BLfML) 2018 electric guitar
+
+**Barelas Racket Club** [soundcloud](https://soundcloud.com/gescandon/sets/barelas-racket-club ) 2015 electric guitar
+
+**The Goldsteins** play Bowie [youtube](https://www.youtube.com/watch?v=BauFPCwpOko) 2016 David Bowie!
+
+**Shelley Barratt** [spotify](https://open.spotify.com/playlist/4oIaR3xDBbY0qeiRQ81XQz?si=dPFEVY_TRwGDSgV7qpsz9g) Spotify 2015- electric guitar
+
+**Los Hermanos de Jazz** [soundcloud](https://soundcloud.com/user-486761684/sets/extravaganza-side-a) 1991 - electric guitar

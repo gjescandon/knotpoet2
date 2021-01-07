@@ -1,11 +1,12 @@
+
+.bg-knot {
+  background-color: rgba(233, 212, 71, .85);
+}
+
 .container {
   max-width: 670px;
 }
 
-.post {
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 .content {
   text-align: center;
@@ -14,20 +15,34 @@
   
 }
 
+.footer {
+  text-align: center;
+}
+
 h1 a {
   color: #000000;
 }
 
-.bg-knot {
-  background-color: rgba(233, 212, 71, .85);
+.knot-list {
+  text-align: left;
 }
 
-.footer {
-  text-align: center;
+ol {
+  text-align: left;
 }
+
 /*
  * Custom translucent site header
  */
+
+.lead {
+  margin-top: 10px;
+}
+ .post {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin:auto;
+}
 
 .site-header {
   background-color: rgba(233, 212, 71, .85);
@@ -47,6 +62,9 @@ h1 a {
   width: 33px;
 }
 
+.tags {
+  text-align: center;
+}
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
@@ -99,3 +117,4 @@ h1 a {
 }
 
 .overflow-hidden { overflow: hidden; }
+

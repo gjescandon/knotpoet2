@@ -11,13 +11,15 @@
 
 ![fingers](../images/fingers.jpg "fingers")
 
-On this page, I have links to some tools that I use for music songwriting and production.
+__What is this music thing?__
 
+I remember listening to my dad's 8-track cassette when I was 4 years old. I was hooked on the White Album!
 
-1. [Chorder](https://www.knothear.com/chorder) This is a webpage that will tell you all the chords in a selected mode or scale. Often we are instructed to practice scales and modes. And on the flip side, songs are often written by stacking chords together. If you want to use a specific scale, you can use Chorder to whip up a cool riff with the chords in your target scale!
-1. [Delay Calculator](https://docs.google.com/spreadsheets/d/11fC7GbYM7nXKBOFsz2ts83r6lt0Gn_q61umE3jZDKoE/edit?usp=sharing) This is a Google spreadsheet that you can use to fine tune delay times in your DAW. To use this sheet, copy it to your own G-drive. Then enter the BPM of the track you are working on. Viola!
-1. [ClyphX Push User Map](https://docs.google.com/spreadsheets/d/1CNNxak9jobs4XudklUiW-mR-78p_DZ-IZydsbVqCIco/edit?usp=sharing) This is a Google spreadsheet that maps all the buttons on Push 2. It includes a visual map of the Push 2, and also a list of every mappable button and its corresponding CC/Note value. To use this sheet, copy it to your G-drive. Then update the 
+Since then, it has been a slow but always growing experience to actually participate in music. I did not go to music school. I have not played any major festivals (yet!).
 
+I have played with many good friends and talented musicians.
+
+At this point of the road, I have some ideas and opinions about making music. I like melodies. That said, good rhythmn is even more important! My thoughts go deeper than that. But that is the essential idea.
 
 I invite you to follow me on [instragram](https://www.instagram.com/geoffknot/).
 

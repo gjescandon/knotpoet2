@@ -44,6 +44,10 @@ ol {
   margin:auto;
 }
 
+.post img {
+  width:auto;
+}
+
 .site-header {
   background-color: rgba(233, 212, 71, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);

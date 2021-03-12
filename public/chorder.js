@@ -8,7 +8,7 @@ function sleep(ms) {
 
 var modes = [];
 
-modes.push({"mode":"Altered","group":"Jazz","intervals":"1,b2,b3,3,b5,b6,b7","semitones":"1,1,0,1,1,0,1,0,1,0,1,0","desc":"How to sound 'jazzy'. Lots of fun over the dominant 7th chords and minor 7th chords too."});
+modes.push({"mode":"Altered","group":"Jazz","intervals":"1,b2,b3,3,b5,b6,b7","semitones":"1,1,0,1,1,0,1,0,1,0,1,0","desc":"How to sound 'jazzy'. This is actually the 7th mode of the Melodic Minor. Lots of fun over the dominant 7th chords and minor 7th chords too."});
 modes.push({"mode":"Diminished","group":"Advanced, Metal","intervals":"1,2,b3,4,b5,b6,6,7","semitones":"1,0,1,1,0,1,1,0,1,1,0,1","desc":"A symmetrical scale that is built by alternating whole steps and half steps. Alternately, it is stacked two diminished chords."});
 modes.push({"mode":"Dorian","group":"Basic","intervals":"1,2,b3,4,5,6,b7","semitones":"1,0,1,1,0,1,0,1,0,1,1,0","desc":"2nd mode of the Major Scale"});
 modes.push({"mode":"Double Diminished","group":"Jazz","intervals":"1,b2,b3,3,b5,5,6,b7","semitones":"1,1,0,1,1,0,1,1,0,1,1,0","desc":"Same as the diminished scale, starting on the 2nd degree. Alternatively, Stack two diminished chords. Very similar to Altered scale. Jazzy."});
@@ -74,6 +74,10 @@ chords["1m33b5"]="dim";
 chords["1347"]="sus";
 chords["147"]="sus";
 chords["1m347"]="msus";
+chords["13479"]="sus";
+chords["1479"]="sus";
+chords["1m3479"]="msus";
+chords["1b3b5M7"]="dim";
 
 var cn = [];
 cn.push["C"];
@@ -125,19 +129,42 @@ var Chorder = {
     },
     getChordName: function(int, frm) {
       log(int);
-      if(chords[frm]== undefined) {
+      log(frm);
+      if(frm.length== 0) {
         return 'n/a';
+      }
+      if (Chorder.getValidForms(frm) == "--") {
+        return 'n/a';
+      }
+        frm.forEach(function(x){log(x.trim()); log("" + chords[x.trim()] + " " + x.trim());});
+        var chrds = "";
+        frm.forEach(function(x){if (chords[x.trim()] != undefined) chrds += "" + chords[x.trim()] + "<br/>";});
+        return degrees[int].note + " " + chrds;
+      
+    },
+    getValidForms: function(frm) {
+
+      var validforms = "";
+      frm.forEach(function(x) {
+        if (chords[x] != undefined) validforms += x + "<br/>";
+      });
+      if (validforms == "") {
+        return "--";
       } else {
-        return degrees[int].note + " " + chords[frm];
+        return validforms;
       }
     },
     getChords : function(mode) {
       var r = 'Chords here: ';
       var mx = 'selected mode';
+      var sus;
       $( "#mode-select option:selected" ).each(function() {
-          mx = $( this ).text();
-        });
-
+        mx = $( this ).text();
+      });
+      if ($( "#sus-select" ).is(":checked")) {
+        sus = true;
+      }
+      log ("sus " + sus);
       var modeX;
       var groups = {};
       modes.forEach(function(el) {
@@ -149,8 +176,8 @@ var Chorder = {
           
       r = "<div class=\"row, border-top, border-bottom\"><div class=\"col-12\"><h2>"+modeX.mode+"</h2></div></div>";
       
-      r += "<div class=\"row,border-bottom\"><div class=\"col-12\"><table class=\"table,table-bordered,table-striped, chorder-table\">";
-      //r += "<table class=\"table,table-bordered,table-striped, chorder-center\">";
+      r += "<div class=\"row,border-bottom\"><div class=\"col-12\"><table class=\"table table-bordered table-striped chorder-table\">";
+      //r += "<table class=\"table table-bordered table-striped chorder-center\">";
       r += "<thead class=\"thead-dark\"><tr>";
       r += "<th scope=\"col\">Degree</div>";
       r += "<th scope=\"col\">Interval</td>";
@@ -175,21 +202,65 @@ var Chorder = {
         // identify intervals
         var cn = [];
         if (stones[0]==1) {
-          var fd = [];
-          fd.push("1");
-          if (stones[1]== 1) fd.push("b9");
-          if (stones[2]== 1) fd.push("9");
-          if (stones[3]== 1) fd.push("m3");
-          if (stones[4]== 1) fd.push("3");
-          if (stones[5]== 1) fd.push("4");
-          if (stones[6]== 1) fd.push("b5");
-          if (stones[7]== 1) fd.push("5");
-          if (stones[8]== 1) fd.push("b6");
-          if (stones[9]== 1) fd.push("6");
-          if (stones[10]== 1) fd.push("7");
-          if (stones[11]== 1) fd.push("M7");
-          var frm = fd[0]+ fd[2]+ fd[4]+ fd[6];
-          formulas.push(frm);
+          var fd3 = [];
+          //fd.push("1");
+          //if (stones[1]== 1) fd.push("b9");
+          if (stones[4]== 1) fd3.push("13");
+          if (stones[3]== 1) fd3.push("1m3");
+          var fd5 = [];
+          if (sus == true) {
+            if (stones[5]== 1) {
+              fd3.forEach(function(x) {
+                fd5.push(x+"4");
+              });
+            }
+
+          } else {
+            if (stones[7]== 1) {
+              fd3.forEach(function(x) {
+                fd5.push(x+"5");
+              });
+            }
+            if (stones[6]== 1) {
+              fd3.forEach(function(x) {
+                fd5.push(x+"b5");
+              });
+            }
+  
+          }
+          //if (stones[8]== 1) fd.push("b6");
+          //if (stones[9]== 1) fd.push("6");
+          var fd7 = [];
+          if (stones[10]== 1) {
+            fd5.forEach(function(x) {
+              fd7.push(x+"7");
+            });
+          }
+          if (stones[11]== 1) {
+            fd5.forEach(function(x) {
+              if (x.indexOf("35") > 0) fd7.push(x+"M7");
+            });
+          }
+
+          //if (stones[2]== 1) fd.push("9");
+          var fd9 = [];
+          if (sus == true) {
+            for (var i = 0; i < fd7.length; i++) {
+              if (stones[2]== 1) {
+                fd7[i] = fd7[i] + "9";
+              }
+            }
+
+          }
+
+          var frm = '';// fd[0]+ fd[2]+ fd[3]+ fd[4]+ fd[5]+ fd[6]+ fd[7];
+          log(fd7);
+
+          if (fd7.length > 0) {
+            formulas.push(fd7);
+          } else {
+            formulas.push(fd5);
+          }
           } else { 
           // do nothing
         }
@@ -219,8 +290,11 @@ var Chorder = {
           r += "<td>" + j + "</td>";
         }
         r += "<td>" + intervals[i] + "</td>";
+
         r += "<td>" + Chorder.getChordName(intervals[i], formulas[i]) + "</td>";
-        r += "<td>" + formulas[i] + "</td>";
+
+        r += "<td>" + Chorder.getValidForms(formulas[i]) + "</td>";
+        
         //r += "<div class=\"col-sm\"> sus cho </div>";
         //r += "<div class=\"col-sm\"> knot cho </div>";
         r+= "</tr>";
@@ -229,6 +303,6 @@ var Chorder = {
       r += "<div class=\"row, chorder-margin\"><div class=\"col-12\">"+modeX.desc+"</div></div>";
 
       $("#chord-grid").html(r);
-      }
+    }
 }
 

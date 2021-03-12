@@ -16,6 +16,12 @@
   border-top: 1px;
   font-style: italic;
 }
+.table {
+  width: 100%;
+
+}
+  
+/*
 .chorder-table {
   margin-left: auto;
   margin-right: auto;
@@ -25,5 +31,6 @@
 .chorder-table th{
   padding: 13px;
 }
+*/
 #ppr1 {display: none;}
 #ppr2 {display: none;}

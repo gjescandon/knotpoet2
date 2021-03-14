@@ -17,6 +17,7 @@ modes.push({"mode":"Harmonic Minor","group":"Advanced","intervals":"1,2,b3,4,5,b
 modes.push({"mode":"Hungarian Minor","group":"Advanced, Metal","intervals":"1,2,b3,b5,5,b6,7","semitones":"1,0,1,1,0,0,1,1,1,0,0,1","desc":"4th mode of Dbl Harmonic Major"});
 modes.push({"mode":"Locrian","group":"Basic","intervals":"1,b2,b3,4,b5,b6,b7","semitones":"1,1,0,1,0,1,1,0,1,0,1,0","desc":"7th mode of the Major Scale"});
 modes.push({"mode":"Lydian","group":"Basic, Metal","intervals":"1,2,3,#4,5,6,7","semitones":"1,0,1,0,1,0,1,1,0,1,0,1","desc":"4th mode (subdominant) of the Major Scale"});
+modes.push({"mode":"Lydian Dominant","group":"Jazz, Metal","intervals":"1,2,3,#4,5,6,b7","semitones":"1,0,1,0,1,0,1,1,0,1,1,0","desc":"4th mode (subdominant) of the Melodic Minor Scale"});
 modes.push({"mode":"Major (Ionian)","group":"Basic","intervals":"1,2,3,4,5,6,7","semitones":"1,0,1,0,1,1,0,1,0,1,0,1","desc":"Major Scale"});
 modes.push({"mode":"Melodic Minor (up)","group":"Advanced","intervals":"1,2,b3,4,5,6,7","semitones":"1,0,1,1,0,1,0,1,0,1,0,1","desc":"I've never understood the ascending/desceding concept."});
 modes.push({"mode":"Minor (Aeolian)","group":"Advanced","intervals":"1,2,b3,4,5,b6,b7","semitones":"1,0,1,1,0,1,0,1,1,0,1,0","desc":"6th mode of the Major Scale. "});

@@ -31,9 +31,12 @@ var poet = POET(app, {
   }
 });
 
+console.info(' console info app js');
+
+
 poet.init().then(function(){
   //initialized
-  /*
+  
   console.info(' console info poet init');
   console.log('post count: ' + poet.helpers.getPostCount());
   var posts = poet.helpers.getPosts(0, 3);
@@ -52,7 +55,7 @@ poet.init().then(function(){
 
   var tPost = poet.helpers.getPost("knot-instagram");
   console.log("hello here" + tPost.title);
-*/
+
 });
 
 // view engine setup

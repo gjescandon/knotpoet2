@@ -23,6 +23,8 @@ What you say? Check it out!
 
 [Spotify](https://open.spotify.com/album/6fp5gZbz1rGKnk5b5YWLqO)
 
+[Youtube](https://youtube.com/playlist?list=OLAK5uy_mCq5HAJfJY9fx2KHdg9rV_N2bh08E_eYU)
+
 Here is the songlist:
 
 Popup Llama : a confection of jazz pop house
